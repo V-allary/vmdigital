@@ -34,7 +34,7 @@ app.post('/submit-form', async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'vallarymitchelle1@gmail.com', // 
+      user: 'vmdigitalswebdevelopment@gmail.com', // 
       pass: process.env.PTSO   // App Password  
     },
   });
@@ -53,7 +53,7 @@ app.post('/submit-form', async (req, res) => {
     } 
 
     console.log('Email sent:', info.response);
-    res.status(200).json({message: 'Message sent successfully!'});
+    res.status(200).json({ message:'Message sent successfully and email sent!'});
   });
 });
 
